@@ -1,7 +1,7 @@
-from multiprocessing import process
+from multiprocessing import Process
 
 
-class Actor(process.BaseProcess):
+class Actor(Process):
     def __init__(self):
         super(Actor, self).__init__()
         self._inbox = list()
